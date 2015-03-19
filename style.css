@@ -1,22 +1,75 @@
-.MyGradientClass{
-	height:650px;
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0.07, #2A3475),
-		color-stop(1, #A80707)
-	);
-	background-image: -o-linear-gradient(bottom, #2A3475 7%, #A80707 100%);
-	background-image: -moz-linear-gradient(bottom, #2A3475 7%, #A80707 100%);
-	background-image: -webkit-linear-gradient(bottom, #2A3475 7%, #A80707 100%);
-	background-image: -ms-linear-gradient(bottom, #2A3475 7%, #A80707 100%);
-	background-image: linear-gradient(to bottom, #2A3475 7%, #A80707 100%);
+body{
+	/*background-image: url("theatre.jpg");*/
+	background-size: 100%;
+	background-color: black;
 }
 
 header{
+	background-image: url("header.png");
+	background-size: cover;
+	padding: 80px;
+}
+
+main{
+	padding: 60px;
+	height: 380px;
+}
+
+.Announcement{
 	background-color: white;
-	color: black;
 	border: 2px solid black;
-	padding: 20px;
+	float: left;
+	width: 47%;
+	height: 100%;
+	overflow: y-axis;
+	border-radius: 25px;
+}
+
+.Movies{
+	background-color: white;
+	border: 2px solid black;
+	float: right;
+	width: 47%;
+	height: 100%;
+	overflow: y-axis;
+	border-radius: 25px;
+}
+
+.GeneralPanel{
+	background-color: white;
+	border: 2px solid black;
+	width: 47%;
+	overflow: y-axis;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border-radius: 25px;
+}
+
+.Center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+nav{
+	background-color: #90EE90;
+	padding: 20px ;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	opacity: 0.5;
+	word-spacing: 100px;
+	text-align: center;
+	color: black;
+}
+
+footer{
+	background-color: #282828;
+	color: white;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	word-spacing: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 5px;
 }
