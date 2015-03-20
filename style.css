@@ -1,18 +1,23 @@
 body{
 	/*background-image: url("theatre.jpg");*/
 	background-size: 100%;
-	background-color: black;
+	background-color: white;
+	margin: 0px;
 }
 
 header{
 	background-image: url("header.png");
 	background-size: cover;
-	padding: 80px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	word-spacing: 100px;
+	color: black;
+	height: 150px;
 }
 
 main{
 	padding: 60px;
 	height: 380px;
+	background-color: black;
 }
 
 .Announcement{
@@ -50,16 +55,23 @@ main{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+	text-align: center;
 }
 
-nav{
+.Logo{
+	padding: 40px;
+	margin-bottom: 15px;
+}
+
+.FilmStrip{
 	background-color: #90EE90;
-	padding: 20px ;
+	padding: 50px ;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	opacity: 0.5;
 	word-spacing: 100px;
 	text-align: center;
 	color: black;
+	background-image: url(filmstrip.png);
+	background-size: contain;
 }
 
 footer{
@@ -71,5 +83,4 @@ footer{
 	word-spacing: 100px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	margin-top: 5px;
 }
