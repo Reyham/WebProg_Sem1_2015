@@ -3,11 +3,14 @@ body{
 	background-size: 100%;
 	background-color: white;
 	margin: 0px;
+	width: auto;
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 header{
-	background-image: url("header.png");
-	background-size: cover;
+	background-image: url("background2.png");
+	background-size: 1270px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	word-spacing: 100px;
 	color: black;
@@ -15,43 +18,49 @@ header{
 }
 
 main{
-	padding: 60px;
-	height: 380px;
+	width: auto;
 	background-color: black;
+	overflow-x: scroll;
+	white-space: nowrap;
 }
 
-.Announcement{
+.HomePanel{
 	background-color: white;
 	border: 2px solid black;
-	float: left;
-	width: 47%;
-	height: 100%;
-	overflow: y-axis;
-	border-radius: 25px;
+	width: 600px;
+	height: 280px;
+	display: inline-block;
+	background-image: url(border.png);
+	background-size: cover;
+	background-repeat: none;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-.Movies{
-	background-color: white;
-	border: 2px solid black;
-	float: right;
-	width: 47%;
-	height: 100%;
-	overflow: y-axis;
-	border-radius: 25px;
+p{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.GeneralPanel{
+.ContactPanel{
 	background-color: white;
 	border: 2px solid black;
-	width: 47%;
-	overflow: y-axis;
+	margin-top: 15px; 
+	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
-	border-radius: 25px;
+	width: 440px;
+	padding: 80px;
+	height: 280px;
+	background-image: url(border.png);
+	background-size: cover;
+	background-repeat: none;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.Center {
+.NavBar {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -59,19 +68,31 @@ main{
 }
 
 .Logo{
-	padding: 40px;
-	margin-bottom: 15px;
+	content: url(logo.png);
+	width: 10%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.FilmStrip{
-	background-color: #90EE90;
-	padding: 50px ;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	word-spacing: 100px;
-	text-align: center;
+ul{
+	list-style-type: none;
 	color: black;
-	background-image: url(filmstrip.png);
-	background-size: contain;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	display: inline;
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	color: black;
 }
 
 footer{

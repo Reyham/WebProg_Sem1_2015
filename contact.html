@@ -7,29 +7,40 @@
 
 <body>
 	<header>
-		<div class="Center">
-			Home Movies Contact
+		<div class="Logo">
+		</div>
+		<div class="NavBar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>Movies</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</div>
 	</header>
-	<nav>
+	<nav class="FilmStrip">
 		
 	</nav>
-	<main class="GeneralPanel">
-		<form method="post" action="" onsubmit="">
-			Name: <input type="text" name="name" required><br><br>
-			Email: <input type="text" name="email" required><br><br>
-			Phone: <input type="text" name="phone" required><br><br>
-			Select and Options: <select required>
-								<option value="">Select</option>
-								<option value="general">General enquiry</option>
-								<option value="book">Group and corporate bookings</option>
-								<option value="opinion">Suggestions and complaints</option>
-								</select><br><br>
-			Enquiry: <br><textarea cols=40 rows=4 name="message" required></textarea><br><br>
-			<input type="Submit" name="submit">
-			<input type="hidden" name="Time">
-		</form>
+	<main>
+		<div class="ContactPanel">
+			<form method="post" action="" onsubmit="">
+				Name: <input type="text" name="name" required><br><br>
+				Email: <input type="text" name="email" required><br><br>
+				Phone: <input type="text" name="phone" required><br><br>
+				Select and Options: <select required>
+									<option value="">Select</option>
+									<option value="general">General enquiry</option>
+									<option value="book">Group and corporate bookings</option>
+									<option value="opinion">Suggestions and complaints</option>
+									</select><br><br>
+				Enquiry: <br><textarea cols=40 rows=3 name="message" required></textarea><br><br>
+				<input type="Submit" name="submit">
+				<input type="hidden" name="Time">
+			</form>
+		</div>
 	</main>
+	<aside class="FilmStrip">
+		
+	</aside>
 	<footer>
 			Reyham Soenasto s3496982 . Mathew Grant s3505394
 	</footer>
