@@ -37,6 +37,7 @@ main{
 	padding-bottom: 80px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	overflow: hidden;
 }
 
 h1{
@@ -52,6 +53,12 @@ p{
 	padding: 10px;
 	padding-top: 0px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	white-space: normal;
+}
+
+.ContentFormat{
+	white-space: normal;
+	display: inline-block;
 }
 
 p::first-letter { 
@@ -94,14 +101,14 @@ p::first-letter {
 	margin-right: auto;
 }
 
-ul{
+#NavList{
 	list-style-type: none;
 	color: black;
 	margin: 0;
 	padding: 0;
 }
 
-li{
+.NavItem{
 	display: inline;
 }
 
