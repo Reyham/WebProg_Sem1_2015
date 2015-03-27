@@ -1,7 +1,6 @@
 body{
-	/*background-image: url("theatre.jpg");*/
+	background-image: url("background2.png");
 	background-size: 100%;
-	background-color: black;
 	margin: 0px;
 	width: auto;
 	overflow: scroll;
@@ -140,4 +139,23 @@ footer{
 	word-spacing: 100px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+nav{
+	background-image: url("background2.png");
+	background-color: white;
+}
+
+#InfoPanel{
+	border: 2px solid black;
+	width: 35%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background-image: url("fireworks.jpg");
+	background-size: cover;
+	color: white;
+	padding-right: 15%;
 }
