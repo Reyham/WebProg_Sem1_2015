@@ -1,5 +1,4 @@
 body{
-	background-image: url("background2.png");
 	background-size: 100%;
 	margin: 0px;
 	width: auto;
@@ -8,12 +7,12 @@ body{
 }
 
 header{
-	background-image: url("background2.png");
-	background-size: 1270px;
+	background-image: url("squares.png");
+	background-size: cover;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	word-spacing: 100px;
 	color: black;
-	height: 148px;
+	background-repeat: no-repeat;
 }
 
 main{
@@ -26,14 +25,14 @@ main{
 .HomePanel{
 	background-color: white;
 	border: 2px solid black;
-	width: 600px;
-	height: 280px;
+	width: 44%;
+	min-height: 100px;
 	display: inline-block;
 	background-image: url(oldpaper.png);
-	background-size: cover;
+	background-size: 100% 100%;
 	background-repeat: none;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 5%;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	overflow: hidden;
@@ -89,17 +88,18 @@ p::first-letter {
 .NavBar {
     margin-left: auto;
     margin-right: auto;
+	margin-top: 20px;
     width: 100%;
 	text-align: center;
 	background-color: black;
 	padding-top: 10px;
-	margin-bottom: 10px;
+	overflow: hidden;
 }
 
 .Logo{
 	content: url(logo.png);
 	width: 10%;
-	height: auto;
+	height: ;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -154,7 +154,8 @@ nav{
 
 #InfoPanel{
 	border: 2px solid black;
-	width: 100%;
+	width: auto;
+	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
@@ -162,5 +163,4 @@ nav{
 	background-image: url("fireworks.jpg");
 	background-size: cover;
 	color: white;
-	padding-right: 10%;
 }
