@@ -6,6 +6,7 @@ body{
 	overflow-x: hidden;
 }
 
+
 header{
 	background-image: url("squares.png");
 	background-size: cover;
@@ -21,6 +22,22 @@ main{
 	overflow-x: scroll;
 	white-space: nowrap;
 }
+.MoviePanel{
+	background-color: white;
+	border: 2px solid black;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	background-image: url(oldpaper.png);
+	background-size: 100% 100%;
+	background-repeat: none;
+	padding-top: 40px;
+	padding-bottom: 5%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
 
 .HomePanel{
 	background-color: white;
@@ -163,4 +180,52 @@ nav{
 	background-image: url("fireworks.jpg");
 	background-size: cover;
 	color: white;
+}
+.CinderellaImg{
+text-align: center;
+content: url(Cinderella.jpg);
+height: auto;
+width:20%;
+margin-left: auto;
+margin-right: auto;
+display: inline-block;
+
+padding-left:3%
+}
+.SoundofmusicImg{
+text-align: center;
+content: url(soundofmusic.jpg);
+height: auto;
+width:20%;
+margin-left: auto;
+margin-right: auto;
+display: inline-block;
+
+padding-left:4%
+}
+.fnf7Img{
+text-align: center;
+display: inline-block;
+content: url(fnf7.jpg);
+height: auto;
+width:20%;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.HomeImg{
+text-align: center;
+content: url(Home.jpg);
+height: auto;
+width:20%;
+margin-left: auto;
+margin-right: auto;
+display: inline-block;
+padding-right:4%;
+padding-left:4%;
+}
+.social{
+padding-top:5px;
+display: inline-block;
 }
