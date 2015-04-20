@@ -105,12 +105,12 @@ p::first-letter {
 .NavBar {
     margin-left: auto;
     margin-right: auto;
-	margin-top: 20px;
     width: 100%;
 	text-align: center;
 	background-color: black;
-	padding-top: 10px;
 	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .Logo{
@@ -132,6 +132,23 @@ p::first-letter {
 .NavItem{
 	display: inline;
 	color: white;
+	background: #2db34a;
+	border-radius: 6px;
+	cursor: pointer;
+	height: 20px;
+	text-align: center;
+	transition-property: background;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.NavItem:hover{
+	background: #ff7b29;
+}
+
+a.NavLink{
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 a.NavLink:visited{
@@ -141,7 +158,6 @@ a.NavLink:visited{
 
 a.NavLink:hover{
 	color: white;
-	font-weight: bold;
 }
 
 a:link{
