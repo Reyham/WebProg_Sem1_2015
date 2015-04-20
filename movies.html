@@ -2,10 +2,9 @@
 <html>
 <head>
 	<title>Silverado</title>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script>
-		document.createElement('main');
-	</script>
+	
 </head>
 
 <body>
@@ -20,17 +19,77 @@
 			</ul>
 		</div>
 	</header>
-	<div class="CinderellaImg">
-	</div>
-		
-		<div class="HomeImg">
-	</div>
-		<div class="fnf7Img">
-	</div>
-		<div class="SoundofmusicImg">
-	</div>
-	<div class="MoviePanel">
-				<p></p>
+		<img class="Img" src="Cinderella.jpg" id="Cinderella"/>
+		<img class="Img" src="home.jpg" id="Home"/>
+		<img class="Img" src="fnf7.jpg" id="fnf7"/>
+		<img class="Img" src="soundofmusic.jpg" id="SOM"/>
+		<br/>
+	
+		<div id="CinderellaMovie" class="MoviePanel">
+			<article>
+				<input type="checkbox" id="See_sessions" role="button">
+				<label for="See_sessions" onclick=""><span>Read More</span><span>Hide This Shit!</span></label>    
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/WRuHM6rLSF8"></iframe>
+				
+					<section>
+					<p>Owls are a group of birds that belong to the order Strigiformes, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g. the Northern Hawk Owl). </p>
+					</section>    
+
+			</article>
+		</div>
+		<div id="fnf7Movie" class="MoviePanel">
+			<article>
+				<input type="checkbox" id="See_sessions" role="button">
+				<label for="See_sessions" onclick=""><span>Read More</span><span>Hide This Shit!</span></label>    
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/Skpu5HaVkOc"></iframe>
+					<section>
+					<p>Owls are a group of birds that belong to the order Strigiformes, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g. the Northern Hawk Owl). </p>
+					</section>    
+
+			</article>
+		</div>
+				<div id="HomeMovie" class="MoviePanel">
+				<article>
+				<input type="checkbox" id="See_sessions" role="button">
+				<label for="See_sessions" onclick=""><span>Read More</span><span>Hide This Shit!</span></label>    
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/MyqZf8LiWvM"></iframe>
+					<section>
+					<p>Owls are a group of birds that belong to the order Strigiformes, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g. the Northern Hawk Owl). </p>
+					</section>    
+
+			</article>
+		</div>
+				<div id="SOMMovie" class="MoviePanel">
+				<article>
+				<input type="checkbox" id="See_sessions" role="button">
+				<label for="See_sessions" onclick=""><span>Read More</span><span>Hide This Shit!</span></label>    
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/EjVtEgrJgv4"></iframe>
+					<section>
+					<p>Owls are a group of birds that belong to the order Strigiformes, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g. the Northern Hawk Owl). </p>
+					</section>    
+
+			</article>
+				</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+	</script>
+	<script>
+	$("#Cinderella").on('click', function() {
+		$("#CinderellaMovie").fadeIn();
+		$("#fnf7Movie,#HomeMovie,#SOMMovie").fadeOut();
+	});
+	$("#fnf7").on('click', function() {
+		$("#fnf7Movie").fadeIn();
+		$("#CinderellaMovie,#HomeMovie,#SOMMovie").fadeOut();
+	});
+	$("#Home").on('click', function() {
+		$("#HomeMovie").fadeIn();
+		$("#CinderellaMovie,#fnf7Movie,#SOMMovie").fadeOut();
+	});
+	$("#SOM").on('click', function() {
+		$("#SOMMovie").fadeIn();
+		$("#CinderellaMovie,#fnf7Movie,#HomeMovie").fadeOut();
+	});
+	</script>
 			</div>
 	<footer>
 			Reyham Soenasto s3496982 . Mathew Grant s3505394 <a href="http://validator.w3.org/check?uri=referer">http://validator.w3.org/check?uri=referer</a>
