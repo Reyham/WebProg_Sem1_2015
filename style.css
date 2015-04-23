@@ -224,6 +224,34 @@ br {clear:both;}
 /* css only show/hide
 
  */
+ 
+ .btn{
+    width: auto;
+    background: #2ba6cb;
+    border: 1px solid #1e728c;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 10px 20px 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+}
+.btn:hover{
+    background: #006582;
+}
 
 html { background: white }
 
@@ -247,7 +275,7 @@ iframe {
 }
 
 iframe {
-    max-width: 50%;
+    max-width: 100%;
     height: 10%;
 }
 
@@ -299,7 +327,7 @@ section {
 }
 
 input[type=checkbox] {
-    border: 0;
+    border: 1px;
     clip: rect(0 0 0 0);
     height: 1px;
     width: 1px;
@@ -308,8 +336,7 @@ input[type=checkbox] {
     padding: 0;
     position: absolute;
 }
-
-[for="See_sessions"] {
+[for="Home_sessions"] {
     position: absolute;
     bottom: -3rem;
     left: 0;
@@ -319,12 +346,12 @@ input[type=checkbox] {
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
 }
 
-[for="See_sessions"]:hover {
+[for="Home_sessions"]:hover {
     background: rgba(0,0,0,.5);
     color: rgb(255,255,255);
 }
 
-[for="See_sessions"] span:last-of-type {
+[for="Home_sessions"] span:last-of-type {
     display: none;
     visibility: hidden;
 }
@@ -337,12 +364,131 @@ input[type=checkbox]:checked ~ section {
 
 input[type=checkbox]:checked ~ figure { width: 100% }
 
-input[type=checkbox]:checked ~ [for="See_sessions"] span:first-of-type {
+input[type=checkbox]:checked ~ [for="Home_sessions"] span:first-of-type {
     display: none;
     visibility: hidden;
 }
 
-input[type=checkbox]:checked ~ [for="See_sessions"] span:last-of-type {
+input[type=checkbox]:checked ~ [for="Home_sessions"] span:last-of-type {
     display: block;
     visibility: visible;
+}
+
+
+[for="SOM_sessions"] {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+[for="SOM_sessions"]:hover {
+    background: rgba(0,0,0,.5);
+    color: rgb(255,255,255);
+}
+
+[for="SOM_sessions"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="SOM_sessions"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="SOM_sessions"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="fnf7_sessions"] {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+[for="fnf7_sessions"]:hover {
+    background: rgba(0,0,0,.5);
+    color: rgb(255,255,255);
+}
+
+[for="fnf7_sessions"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="fnf7_sessions"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="fnf7_sessions"] span:last-of-type {
+    display: block;
+    visibility: visible;
+	
+}
+
+[for="Cinderella_sessions"] {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+[for="Cinderella_sessions"]:hover {
+    background: rgba(0,0,0,.5);
+    color: rgb(255,255,255);
+}
+
+[for="Cinderella_sessions"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="Cinderella_sessions"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="Cinderella_sessions"] span:last-of-type {
+    display: block;
+    visibility: visible;
+	
+
+
 }
