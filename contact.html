@@ -24,17 +24,17 @@
 		</div>
 	</header>
 	
-	<main>
+	<main style="overflow:hidden">
 		<div class="ContactPanel">
 			<form method="post" action='http://titan.csit.rmit.edu.au/~e54061/wp/form-tester.php' onsubmit="submitButton()">
 				<label>Name:</label> <input type="text" name="name" required><br><br>
 				<label>Email:</label> <input type="email" name="email" required><br><br>
 				<label>Subject:</label> <select name="subject" required>
-									<option value="">Select</option>
-									<option value="general">General enquiry</option>
-									<option value="group">Group and corporate bookings</option>
-									<option value="opinion">Suggestions and complaints</option>
-									</select><br><br>
+										<option value="">Select</option>
+										<option value="general">General enquiry</option>
+										<option value="group">Group and corporate bookings</option>
+										<option value="opinion">Suggestions and complaints</option>
+										</select><br><br>
 				Message: <br><br><textarea cols=40 rows=4 name="message" required></textarea><br><br>
 				<input type="Submit" name="">
 			</form>

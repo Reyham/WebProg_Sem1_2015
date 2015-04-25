@@ -4,8 +4,8 @@ body{
 	width: auto;
 	overflow: scroll;
 	overflow-x: hidden;
+	background-color: black;
 }
-
 
 header{
 	background-image: url("squares.png");
@@ -22,36 +22,20 @@ main{
 	overflow-x: scroll;
 	white-space: nowrap;
 }
-.MoviePanel{
-	background-color: white;
-	border: 2px solid black;
-	width: 100%;
-	height: auto;
-	display: inline-block;
-	background-image: url(oldpaper.png);
-	background-size: 100% 100%;
-	background-repeat: none;
-	padding-top: 40px;
-	padding-bottom: 5%;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	overflow: hidden;
-	   display:none;
-    position:absolute;
-}
-
 
 .HomePanel{
 	background-color: white;
 	border: 2px solid black;
-	width: 44%;
-	min-height: 100px;
+	width: 490px;
+	height: 280px;
 	display: inline-block;
 	background-image: url(oldpaper.png);
 	background-size: 100% 100%;
 	background-repeat: none;
-	padding-top: 40px;
-	padding-bottom: 5%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-right: 5px;
+	padding-left: 5px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	overflow: hidden;
@@ -66,23 +50,37 @@ h1{
 	font-size: 30px;
 }
 
-p{
-	text-align: center;
-	padding: 10px;
-	padding-top: 0px;
+h2{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	white-space: normal;
+	display: inline;
 }
 
-p::first-letter { 
-    font-size: 150%;
+h2::first-letter { 
 	font-weight: bold;
 	text-decoration: underline;
     font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 }
 
+h3{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+p.Details{
+	padding: 10px;
+	padding-top: 0px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	white-space: normal;
+	display: inline;
+}
+
+.ContentFormat{
+	white-space: normal;
+	display: inline-block;
+}
+
 .ContactPanel{
-	background-color: white;
 	border: 2px solid black;
 	margin-top: 15px; 
 	margin-bottom: 15px;
@@ -91,7 +89,7 @@ p::first-letter {
 	width: 440px;
 	padding: 80px;
 	height: 280px;
-	background-image: url(oldpaper.png);
+	background-image: url(contactform.png);
 	background-size: cover;
 	background-repeat: none;
 	font-family: "Comic Sans MS", cursive, sans-serif;
@@ -111,8 +109,8 @@ p::first-letter {
 }
 
 .Logo{
-	content: url(logo.png);
-	width: 10%;
+	content: url(quill.png);
+	width: 22%;
 	height: ;
 	margin-left: auto;
 	margin-right: auto;
@@ -178,8 +176,7 @@ footer{
 }
 
 nav{
-	background-image: url("background2.png");
-	background-color: white;
+	background-color: black;
 }
 
 #InfoPanel{
@@ -195,150 +192,6 @@ nav{
 	color: white;
 }
 
-.Img{
-margin-top: 20px;
-cursor:pointer;
-height: auto;
-width:20%;
-margin-left: auto;
-margin-right: auto;
-display: inline-block;
-
-padding-left:4%;
-}
-.social{
-padding-top:5px;
-display: inline-block;
-}
-
-br {clear:both;}
-
-
-/* css only show/hide
-
- */
-
-html { background: white }
-
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-iframe {
-    margin: 0 0 1.3rem 0;
-    -webkit-transition: .125s linear;
-    -moz-transition: .125s linear;
-    -ms-transition: .125s linear;
-    -o-transition: .125s linear;
-    transition: .125s linear;
-}
-
-iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-body:before, body:after {
-    content: "";
-    display: table;
-}
-
-body:after { clear: both }
-
-p { margin-bottom: 1.3rem }
-
-article {
-    margin-bottom: 3rem;
-    position: relative;
-    *zoom: 1;
-}
-
-article:before, article:after {
-    content: "";
-    display: table;
-}
-
-article:after { clear: both }
-
-article figure {
-    float: left;
-    width: 32.5%;
-}
-
-article section:first-of-type {
-    float: right;
-    width: 62.5%;
-}
-
-article section:last-of-type {
-    display: none;
-    visibility: hidden;
-}
-
-section {
-    -webkit-transition: .125s linear;
-    -moz-transition: .125s linear;
-    -ms-transition: .125s linear;
-    -o-transition: .125s linear;
-    transition: .125s linear;
-}
-
-input[type=checkbox] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-}
-
-[for="See_sessions"] {
-    position: absolute;
-    bottom: -3rem;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: .65rem;
-    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
-}
-
-[for="See_sessions"]:hover {
-    background: rgba(0,0,0,.5);
-    color: rgb(255,255,255);
-}
-
-[for="read_more"] span:last-of-type {
-    display: none;
-    visibility: hidden;
-}
-
-input[type=checkbox]:checked ~ section {
-    display: block;
-    visibility: visible;
-    width: 100%;
-}
-
-input[type=checkbox]:checked ~ figure { width: 100% }
-
-input[type=checkbox]:checked ~ [for="See_sessions"] span:first-of-type {
-    display: none;
-    visibility: hidden;
-}
-
-input[type=checkbox]:checked ~ [for="See_sessions"] span:last-of-type {
-    display: block;
-    visibility: visible;
-}
-
 label{
     display: inline-block;
     float: left;
@@ -349,4 +202,198 @@ input{
 	display: inline-block;
 	float: left;
 	width: 196px;
+}
+
+#Poster1, #Poster2, #Poster3, #Poster4{
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+	margin: 2%;
+	border: 5px solid;
+	border-color: #2db34a;
+	transition-property: border;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	cursor: pointer;
+}
+
+.PosterContainer{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	width: 90%;
+	text-align: center;
+}
+
+#Poster1:hover, #Poster2:hover, #Poster3:hover, #Poster4:hover{
+	border-color: #ff7b29;
+}
+
+#Synopsis1, #Synopsis2, #Synopsis3, #Synopsis4{
+	display: none;
+	border: 2px solid black;
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 61%;
+	height: 465px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	padding-left: 2%;
+	padding-right:2%;
+	background-image: url(oldpaper.png);
+	background-size: cover;
+	background-repeat: none;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	position: relative;
+}
+
+.MovieDetails{
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+
+.MovieDetails2{
+	display: inline-block;
+	width: 50%;
+	float: right;
+}
+
+.Trailer{
+	display: none;
+	width: 320px;
+	height: 240px;
+	display: inline-block;
+	float: right;
+}
+
+.WatchTrailer{
+	width: 200px;
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+}
+
+.Ticketing{
+	width: 200px;
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+}
+
+.SynopsisLinks{
+	text-align: right;
+	position: absolute;
+	bottom: 100px;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.BookingForm{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.TriggerLabel{
+	display: inline-block;
+	width: 100px;
+}
+
+#TimeDisplay{
+	display: inline-block;
+}
+
+.Label{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 190px;
+}
+
+.DropBox{
+	display: inline-block;
+	float: left;
+}
+
+.SubCost{
+	display: inline-block;
+	float: right;
+	width: 140px;
+	text-align: right;
+}
+
+.Column{
+	text-decoration: underline;
+	font-size: 102%;
+}
+
+#TotalPrice{
+	display: inline;
+	float:right;
+}
+
+#SubmitButton{
+	margin-left: auto;
+	margin-right: auto;
 }
