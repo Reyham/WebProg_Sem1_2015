@@ -1,0 +1,502 @@
+body{
+	background-size: 100%;
+	margin: 0px;
+	width: auto;
+	overflow: scroll;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+header{
+	background-image: url("squares.png");
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	word-spacing: 100px;
+	color: black;
+	background-repeat: no-repeat;
+}
+
+main{
+	width: auto;
+	background-color: black;
+	overflow-x: scroll;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.HomePanel{
+	background-color: white;
+	border: 2px solid black;
+	width: 490px;
+	height: 280px;
+	display: inline-block;
+	background-image: url(oldpaper.png);
+	background-size: 100% 100%;
+	background-repeat: none;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+h1{
+	padding: 10px;
+	padding-top: 0px;
+	font-size: 20px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+	font-size: 30px;
+}
+
+h2{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	display: inline;
+}
+
+h2::first-letter { 
+	font-weight: bold;
+	text-decoration: underline;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
+h3{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+p.Details{
+	padding: 10px;
+	padding-top: 0px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	white-space: normal;
+	display: inline;
+}
+
+.ContentFormat{
+	white-space: normal;
+	display: inline-block;
+}
+
+.ContactPanel{
+	border: 2px solid black;
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 440px;
+	padding: 80px;
+	height: 280px;
+	background-image: url(contactform.png);
+	background-size: cover;
+	background-repeat: none;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+}
+
+.NavBar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+	text-align: center;
+	background-color: black;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.Logo{
+	content: url(quill.png);
+	width: 22%;
+	min-width: 250px;
+	min-height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#NavList{
+	list-style-type: none;
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.NavItem{
+	display: inline;
+	color: white;
+	background: #2db34a;
+	border-radius: 6px;
+	cursor: pointer;
+	height: 20px;
+	text-align: center;
+	transition-property: background;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.NavItem:hover{
+	background: #ff7b29;
+}
+
+a.NavLink{
+	padding-right: 50px;
+	padding-left: 50px;
+	text-decoration: none;
+	color: white;
+}
+
+a.NavLink:visited{
+	text-decoration: none;
+	color: white;
+}
+
+a.NavLink:hover{
+	color: white;
+}
+
+a.Validator:link{
+	text-decoration: none;
+	color: white;
+}
+
+a.Validator:visited{
+	color: silver;
+}
+
+footer{
+	background-color: #282828;
+	color: white;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	word-spacing: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+nav{
+	background-color: black;
+}
+
+#InfoPanel{
+	border: 2px solid black;
+	width: auto;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url("fireworks.jpg");
+	background-size: cover;
+	color: white;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 80px;
+	text-align: left;
+}
+input{
+	display: inline-block;
+	float: left;
+	width: 196px;
+}
+
+#Poster1, #Poster2, #Poster3, #Poster4{
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+	margin: 2%;
+	border: 5px solid;
+	border-color: #2db34a;
+	transition-property: border;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	cursor: pointer;
+}
+
+.PosterContainer{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	width: 90%;
+	text-align: center;
+}
+
+#Poster1:hover, #Poster2:hover, #Poster3:hover, #Poster4:hover{
+	border-color: #ff7b29;
+}
+
+.SynopsisContainer{
+	max-width: 1350px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Synopsis{
+	display: none;
+	border: 2px solid black;
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 61%;
+	min-width: 704px;
+	height: 465px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	padding-left: 2%;
+	padding-right:2%;
+	background-image: url(oldpaper.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	position: relative;
+}
+
+.MovieDetails{
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+
+.MovieDetails2{
+	display: inline-block;
+	width: 50%;
+	float: right;
+}
+
+.Trailer{
+	display: none;
+	width: 320px;
+	height: 240px;
+	display: inline-block;
+	float: right;
+}
+
+.WatchTrailer{
+	width: 200px;
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+}
+
+.Ticketing{
+	width: 200px;
+	margin: 2px;
+	float: left;
+	text-decoration: none;
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.Ticketing:hover{
+	background: #00d9ff;
+}
+
+.SynopsisLinks{
+  float: right;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	cursor: pointer;
+}
+
+.close:hover { background: #00d9ff; }
+
+.BookingForm{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.TriggerLabel{
+	display: inline-block;
+	width: 100px;
+}
+
+#TimeDisplay{
+	display: inline-block;
+}
+
+.Label{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 150px;
+	padding-right: 15%;
+}
+
+.DropBox{
+	display: inline-block;
+	float: left;
+}
+
+.SubCost{
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+
+.SubCostHead{
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+
+.Column{
+	text-decoration: underline;
+	font-size: 102%;
+}
+
+#TotalPrice{
+	display: inline;
+	float:right;
+}
+
+#SubmitButton{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+@media screen and (max-width: 750px){
+	#NavList{
+	word-spacing: 0;
+	}
+	
+	#Synopsis{
+		background-image: url(oldpaperclear.jpg);
+		background-size: cover;
+		background-color: white;
+		padding-top: 5px;
+		min-width: initial;
+		width: 418px;
+		height: 100%;
+	}
+	
+	.MovieDetails{
+		display: none;
+	}
+	
+	.MovieDetails2{
+		display: inline-block;
+		width: initial;
+		float: initial;
+	}
+}
+
+@media screen and (max-width: 588px) {
+	.modalDialog > div {
+		width: 207px;
+		min-width: initial;
+	}
+	
+	.Label{
+		width: 105px;
+		padding-right: 5px;
+	}
+	
+	.BookingForm{
+		padding-left: 2px;
+		padding-right: 2px;
+		font-size: 70%;
+	}
+	
+	.close{
+		right: 4px;
+		top: 4px;
+	}
+}
+
+@media screen and (max-width: 518px) {
+	.NavItem{
+		display: list-item;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#Synopsis{
+		width: 205px;
+	}
+}

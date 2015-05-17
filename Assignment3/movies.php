@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Silverado</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+	<?php include 'header.php';?>
+	<div class="PosterContainer">
+		<img id="Poster1" src="cinderella.jpg" alt="Cinderella">
+		<img id="Poster2" src="fnf7.jpg" alt="Fast and Furious 7">
+		<img id="Poster3" src="home.jpg" alt="Home the movie">
+		<img id="Poster4" src="soundofmusic.jpg" alt="Sound of Music">
+	</div>
+	<div class="SynopsisContainer">
+		<div id="Synopsis1">
+			<h1 id="RCTitle">Cinderella</h1>
+			<div class="MovieDetails">
+				<h2>Consumer Advice</h2><p class="Details">Very mild themes</p><br>
+				<h2>Director</h2><p class="Details">Kenneth Branagh</p><br>
+				<h2>Main Cast</h2><p class="Details">Lily James,  Richard Madden,  Cate Blanchett,  Helena Bonham Carter</p><br>
+				<h2>Genre</h2><p class="Details">Comedy, Fantasy, Romance</p><br>
+				<h2>Running Time</h2><p class="Details"> 104 Minutes</p><br>
+				<h2>Release Date</h2><p class="Details">26 March 2015</p><br>
+			</div>
+			<div class="MovieDetails2">
+				<h2>Synopsis</h2><p class="Details">The story of "Cinderella" follows the fortunes of young Ella (Lily James) whose merchant father remarries following the death of her mother. 
+				Eager to support her loving father, Ella welcomes her new stepmother (Cate Blanchett) and her daughters Anastasia (Holliday Grainger) and Drisella (Sophie McShera) into the family home. 
+				But, when Ella's father unexpectedly passes away, she finds herself at the mercy of a jealous and cruel new family. 
+				A live-action feature inspired by the classic fairy tale, "Cinderella" brings to life the timeless images from Disney's 1950 animated 
+				masterpiece as fully-realized characters in a visually-dazzling spectacle for a whole new generation.</p><br>
+				<div class="SynopsisLinks">
+					<a href="#openModal"  class="Ticketing" id="RC" title="Cinderella">Buy tickets</a>
+				</div>	
+			</div>	
+		</div>
+		<div id="Synopsis2">
+			<h1 id="ACTitle">Fast and Furious 7</h1>
+			<div class="MovieDetails">
+				<h2>Consumer Advice</h2><p class="Details">Action violence</p><br>
+				<h2>Director</h2><p class="Details">James Wan</p><br>
+				<h2>Main Cast</h2><p class="Details">Vin Diesel,  Paul Walker,  Dwayne Johnson,  Michelle Rodriguez,  Jordana Brewster,  
+				Tyrese Gibson,  Chris "Ludacris" Bridges,  Elsa Pataky,  Lucas Black,  Jason Statham,  Djimon Hounsou,  Tony Jaa,  
+				Ronda Rousey,  Kurt Russell</p><br>
+				<h2>Genre</h2><p class="Details">Action, Thriller</p><br>
+				<h2>Running Time</h2><p class="Details"> 137 Minutes</p><br>
+				<h2>Release Date</h2><p class="Details">02 April 2015</p><br>
+			</div>
+			<div class="MovieDetails2">
+				<h2>Synopsis</h2><p class="Details">Continuing the global exploits in the unstoppable franchise built on speed, 
+				Vin Diesel, Paul Walker and Dwayne Johnson lead the returning cast of Fast & Furious 7. James Wan directs this 
+				chapter of the hugely successful series that also welcomes back favorites Michelle Rodriguez, Jordana Brewster, 
+				Tyrese Gibson, Chris "Ludacris" Bridges, Elsa Pataky and Lucas Black. They are joined by international action stars 
+				new to the franchise including Jason Statham, Djimon Hounsou, Tony Jaa, Ronda Rousey and Kurt Russell. Neal H. Moritz, 
+				Vin Diesel and Michael Fottrell return to produce the film written by Chris Morgan.</p><br>
+				<div class="SynopsisLinks">
+					<a href="#openModal"  class="Ticketing" id="AC" title="Fast & Furious 7">Buy tickets</a>
+				</div>
+			</div>	
+		</div>
+		<div id="Synopsis3">
+				<h1 id="CHTitle">Home</h1>
+			<div class="MovieDetails">
+				<h2>Consumer Advice</h2><p class="Details">Mild threat</p><br>
+				<h2>Director</h2><p class="Details">Tim Johnson</p><br>
+				<h2>Main Cast</h2><p class="Details">Jim Parsons,  Rihanna,  Steve Martin,  Jennifer Lopez</p><br>
+				<h2>Genre</h2><p class="Details"> Animation, Childrens, Comedy, Family, Science Fiction</p><br>
+				<h2>Running Time</h2><p class="Details"> 94 Minutes</p><br>
+				<h2>Release Date</h2><p class="Details">19 March 2015</p><br>
+				
+			</div>
+			<div class="MovieDetails2">
+				<h2>Synopsis</h2><p class="Details">When Earth is taken over by the overly-confident Boov, 
+				an alien race in search of a new place to call home, all humans are promptly relocated, 
+				while all Boov get busy reorganizing the planet. But when one resourceful girl, Tip, manages to avoid capture, 
+				she finds herself the accidental accomplice of a banished Boov named Oh. 
+				The two fugitives realize there's a lot more at stake than intergalactic relations as they embark on the road trip of a lifetime.</p><br><div class="SynopsisLinks">
+					<a href="#openModal"  class="Ticketing" id="CH" title="Home">Buy tickets</a>
+				</div>			
+			</div>	
+		</div>
+		<div id="Synopsis4">
+			<h1 id="AFTitle">The Sound of Music</h1>
+			<div class="MovieDetails">
+				<h2>Consumer Advice</h2><p class="Details">N/A</p><br>
+				<h2>Director</h2><p class="Details">Robert Wise</p><br>
+				<h2>Main Cast</h2><p class="Details">Julie Andrews,  Christopher Plummer,  Eleanor Parker</p><br>
+				<h2>Genre</h2><p class="Details">Drama, Musical</p><br>
+				<h2>Running Time</h2><p class="Details"> 174 Minutes</p><br>
+				<h2>Release Date</h2><p class="Details">10 March 2015</p><br>
+			</div>
+			<div class="MovieDetails2">
+				<h2>Synopsis</h2><p class="Details">A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.
+				To celebrate the 50th Anniversary of the biggest movie musical of all time, we are pleased to announce that the timeless and much loved 
+				'THE SOUND OF MUSIC' will be available in beautifully restored digital, screenings on Mother's Day Sunday May 10th.</p><br>
+				<div class="SynopsisLinks">
+					<a href="#openModal" class="Ticketing" id="AF" title="The Sound of Music">Buy tickets</a>
+				</div>	
+			</div>	
+		</div>
+	</div>
+
+		<div id="openModal" class="modalDialog">
+		<div>
+			<a title="Close" class="close">X</a>
+			<form class="BookingForm" method="post" action="http://titan.csit.rmit.edu.au/~e54061/wp/form-tester-2.php" onsubmit="submitButton()">
+				<div class="TriggerLabel">Film Name:</div> <div id="FilmName" style="display:inline-block">Name</div><br><br>
+				<input type="hidden" name="film" value="RC">
+				<div class="TriggerLabel">Session Day:</div> <select class="SessionDay" name="day" required>
+							<option value="">Select</option>
+							<option value="Monday">Monday</option>
+							<option value="Tuesday">Tuesday</option>
+							<option value="Wednesday">Wednesday</option>
+							<option value="Thursday">Thursday</option>
+							<option value="Friday">Friday</option>
+							<option value="Saturday">Saturday</option>
+							<option value="Sunday">Sunday</option>
+							</select><br><br>
+				<div class="TriggerLabel">Session Time:</div> <div id="TimeDisplay">N/A</div>
+				<input class="SessionTime" type="hidden" name="time" value=""><br><br>
+				<div class="Label Column">Ticket Type</div>
+				<div class="DropBox Column">Quantity</div>
+				<div class="SubCostHead Column">Price($)</div><br><br>
+				<div class="Label">Adult</div> <select class="DropBox" id="SA" name="SA">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="SAsub">0</div><br><br>
+				<div class="Label">Concession</div> <select class="DropBox" id="SP" name="SP">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="SPsub">0</div><br><br>
+				<div class="Label">Child</div> <select class="DropBox" id="SC" name="SC">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="SCsub">0</div><br><br>
+				<div class="Label">First Class Adult</div> <select class="DropBox" id="FA" name="FA">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="FAsub">0</div><br><br>
+				<div class="Label">First Class Child</div> <select class="DropBox" id="FC" name="FC">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="FCsub">0</div><br><br>
+				<div class="Label">Beanbag - 1 Person</div> <select class="DropBox" id="B1" name="B1">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="B1sub">0</div><br><br>
+				<div class="Label">Beanbag - 2 People</div> <select class="DropBox" id="B2" name="B2">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="B2sub">0</div><br><br>
+				<div class="Label">Beanbag - 3 Children</div> <select class="DropBox" id="B3" name="B3">
+					<option value="0">0</option>
+					</select>
+				<div class="SubCost" id="B3sub">0</div><br><br>
+				<div class="Label">Total Price:</div> <div id="TotalPrice" name="price">$0.00</div><br><br>
+				<input id="price" type="hidden" name="price"value="">
+				<input style="float:right"id="SubmitButton"type="Submit" name="">
+			</form>
+		</div>
+		</div>
+	
+	<?php include 'footer.php';?>
+</body>
+</html>
