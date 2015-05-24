@@ -47,10 +47,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#Poster4").on('click', function(){
 		$.post("http://titan.csit.rmit.edu.au/~e54061/wp/movie-service.php", function(movies){
-		$("#Title").text(movies.FO.title);
-		$("#Description").text(movies.FO.description);
+		$("#Title").text(movies.AF.title);
+		$("#Description").text(movies.AF.description);
 		$(".Ticketing").attr("id","AF");
-		$(".Ticketing").attr("title",movies.FO.title);
+		$(".Ticketing").attr("title",movies.AF.title);
 	}, 'json');
 		$("#Synopsis").fadeIn();
 		$('html,body').animate({
@@ -147,6 +147,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(".Ticketing").on('click', function(){
 		$("#FilmName").val($(this).attr('id'));
+		$("#genre").val($(this).attr('id'));
 		var title = $(this).attr('title');
 		
 		if($("#FilmName").val()=="RC" || $("#FilmName").val()=="CH"){
@@ -356,5 +357,42 @@ $(document).ready(function(){
 		$("#Poster3").attr("src",movies.CH.poster);
 		$("#Poster4").attr("src",movies.AF.poster);
 	}, 'json');
+
+
+	//Delete ticket AJAX
+	$('.deleteTicket').click(function(){
+		index = $(this).attr("data-id");
+		$.post("deleteTicket.php", {id: index}, function(data){
+			$('#ReservationForm').empty();
+			$('#ReservationForm').html(data);
+		});
+		
+		$.post("voucherForm.php", function(data){
+			$('#voucherInputContainer').empty();
+			$('#voucherInputContainer').html(data);
+		});
+		
+		return false;
+	});
+
 });
 
+$(document).ready(function(){
+	$.post("http://titan.csit.rmit.edu.au/~e54061/wp/movie-service.php", function(movies){
+		$('.TicketTitle').each(function(){
+		$ticketTitle = $(this).text();
+		if($ticketTitle == "RC"){
+			$(this).text(movies.RC.title);
+		};
+		if($ticketTitle == "CH"){
+			$(this).text(movies.CH.title);
+		};
+		if($ticketTitle == "AF"){
+			$(this).text(movies.AF.title);
+		};
+		if($ticketTitle == "AC"){
+			$(this).text(movies.AC.title);
+		};
+		});
+	}, 'json');
+});

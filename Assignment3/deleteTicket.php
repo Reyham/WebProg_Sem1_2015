@@ -1,6 +1,3 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Silverado</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,13 +5,9 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="functions2.js"></script>
 </head>
-
-<body>
-	<?php include 'header.php';?>
-	
-	<form action="" method="post" id="ReservationForm">
-	<?php
-		if(isset($_POST['id'])){
+<?php
+	session_start();
+	if(isset($_POST['id'])){
 		$id = $_POST['id'];
 		unset($_SESSION['cart']['screenings'][$id]);
 		$_SESSION['cart']['screenings'] = array_values($_SESSION['cart']['screenings']);
@@ -130,17 +123,4 @@
 		}
 		else
 			echo '<div style="color:white">Shopping cart is empty.</div>'
-	?>
-	</form>
-	<?php
-	if(isset($_SESSION['cart']['screenings'][0])){
-	echo '<div id="voucherInputContainer"><form method="post" action="cart.php" id="voucherInput">
-		<h4>Enter Code</h4>
-		<input type="text" name="code" id="code" value="" placeholder="22222-22222-SD" pattern="\d{5}-\d{5}-[A-Z]{2}" title="Invalid voucher format" /> 
-		<input type="submit" name="voucherSubmit" value="check" />
-		</form></div>';
-	};
-	?>
-	<?php include_once 'footer.php';?>
-</body>
-</html>
+?>

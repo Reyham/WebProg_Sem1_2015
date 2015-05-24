@@ -47,7 +47,7 @@
 			<a title="Close" class="close">X</a>
 			<form class="BookingForm" method="post" action="movies2.php" onsubmit="submitButton()">
 				<div class="TriggerLabel">Film Name:</div> <div id="FilmName" style="display:inline-block">Name</div><br><br>
-				<input type="hidden" name="film" value="RC">
+				<input  id="genre" type="hidden" name="film" value="RC">
 				<div class="TriggerLabel">Session Day:</div> <select class="SessionDay" name="day" required>
 							<option value="">Select</option>
 							<option value="Monday">Monday</option>
@@ -129,8 +129,7 @@
 							unset($seats[$key]);
 						}
 					}
-					
-					
+				
 					$screening = array(
 					"movie"=>$_POST['film'],
 					"day"=>$_POST['day'],
@@ -138,7 +137,7 @@
 					"seats"=>$seats,
 					"sub-total"=>$_POST['price']);
 					
-					$_SESSION['screenings'][] = $screening;
+					$_SESSION['cart']['screenings'][] = $screening;
 					var_dump($_SESSION);
 				}
 			?>
