@@ -24,9 +24,9 @@
 		foreach($_SESSION['cart']['screenings'] as $id => $ticket){
 			$rows = count($ticket['seats']);
 			echo '<div class="ticketInfo">';
-			echo '<div class="TicketTitle">'.$ticket['movie']."</div>,<br>
+			echo '<div class="TicketTitle">'.$ticket['movie']."</div>
 				Showing at ".$ticket['day'].",".$ticket['time']."<br>
-				<table border='1px'>
+				<table border='1px solid black'>
 				<tr><td>Ticket Type</td><td>Quantity</td><td>Subtotal</td></tr>";
 			foreach($ticket['seats'] as $key => $row){
 				echo "<tr><td>".$key."</td><td>".$row['quantity']."</td><td>".$row['price']."</td></tr>";
@@ -86,7 +86,6 @@
 			
 	function code_split($input){
 		$reformat = str_replace('-','',$input);
-		echo "<script>alert('".$reformat."');</script>";
 		$charArray = str_split($reformat);
 		return $charArray;
 	};
@@ -98,7 +97,6 @@
 		$arr1 = array_values($arr1);
 		$a=(($arr1[0]*$arr1[1]+$arr1[2])*$arr1[3]+$arr1[4])%26 ;
 		$b=(($arr1[5]*$arr1[6]+$arr1[7])*$arr1[8]+$arr1[9])%26;
-		echo "<script>alert('".$array[$a]." and ".$arr1[9]."');</script>";
 	
 		if ($array[$a]==$arr1[10] && $array[$b]==$arr1[11])
 		{
@@ -118,11 +116,11 @@
 		$discount = 0;
 	}
 			
-			echo '<div id="balancePanel"> Total: '.$total.'<br>';
-			echo 'Voucher Discount: '.$discount.'<br>';
+			echo '<div id="balancePanel"> <div class="balancePanelNames">Total:</div> <div class="balancePanelValues">'.$total.'</div><br><br>';
+			echo '<div class="balancePanelNames">Voucher Discount:</div> <div class="balancePanelValues">'.$discount.'</div><br><br>';
 			$gtotal = $total-($discount*$total);
-			echo 'Grand Total: '.$gtotal.'<br>';
-			echo '<input type="submit" name="sendReservation" value="submitted!"/></div>';
+			echo '<div class="balancePanelNames">Grand Total:</div> <div class="balancePanelValues">'.$gtotal.'</div><br><br>';
+			echo '<input class="submitCart" type="submit" name="sendReservation" value="Book"/></div>';
 	
 			if(isset($_POST['sendReservation'])){
 			$_POST=$_SESSION;
@@ -135,9 +133,9 @@
 	<?php
 	if(isset($_SESSION['cart']['screenings'][0])){
 	echo '<div id="voucherInputContainer"><form method="post" action="cart.php" id="voucherInput">
-		<h4>Enter Code</h4>
+		<h4>Meal and Movie voucher code</h4>
 		<input type="text" name="code" id="code" value="" placeholder="22222-22222-SD" pattern="\d{5}-\d{5}-[A-Z]{2}" title="Invalid voucher format" /> 
-		<input type="submit" name="voucherSubmit" value="check" />
+		<input id="codeSubmit" type="submit" name="voucherSubmit" value="Check" />
 		</form></div>';
 	};
 	?>

@@ -17,9 +17,9 @@
 		foreach($_SESSION['cart']['screenings'] as $id => $ticket){
 			$rows = count($ticket['seats']);
 			echo '<div class="ticketInfo">';
-			echo '<div class="TicketTitle">'.$ticket['movie']."</div>,<br>
+			echo '<div class="TicketTitle">'.$ticket['movie']."</div>
 				Showing at ".$ticket['day'].",".$ticket['time']."<br>
-				<table border='1px'>
+				<table border='1px solid black'>
 				<tr><td>Ticket Type</td><td>Quantity</td><td>Subtotal</td></tr>";
 			foreach($ticket['seats'] as $key => $row){
 				echo "<tr><td>".$key."</td><td>".$row['quantity']."</td><td>".$row['price']."</td></tr>";
@@ -111,11 +111,11 @@
 		$discount = 0;
 	}
 			
-			echo '<div id="balancePanel"> Total: '.$total.'<br>';
-			echo 'Voucher Discount: '.$discount.'<br>';
+			echo '<div id="balancePanel"> <div class="balancePanelNames">Total:</div> <div class="balancePanelValues">'.$total.'</div><br><br>';
+			echo '<div class="balancePanelNames">Voucher Discount:</div> <div class="balancePanelValues">'.$discount.'</div><br><br>';
 			$gtotal = $total-($discount*$total);
-			echo 'Grand Total: '.$gtotal.'<br>';
-			echo '<input type="submit" name="sendReservation" value="submitted!"/></div>';
+			echo '<div class="balancePanelNames">Grand Total:</div> <div class="balancePanelValues">'.$gtotal.'</div><br><br>';
+			echo '<input class="submitCart" type="submit" name="sendReservation" value="Book"/></div>';
 	
 			if(isset($_POST['sendReservation'])){
 			$_POST=$_SESSION;
