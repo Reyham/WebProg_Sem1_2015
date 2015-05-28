@@ -12,11 +12,11 @@
 <body>
 	<?php include 'header.php';?>
 	
-	<form action="" method="post" id="ReservationForm">
+	<form action="Checkout.php" method="post" id="ReservationForm">
 	<?php
 		if(isset($_POST['id'])){
 		$id = $_POST['id'];
-		unset($_SESSION['cart']['screenings'][$id]);
+	
 		$_SESSION['cart']['screenings'] = array_values($_SESSION['cart']['screenings']);
 		};
 		if(isset($_SESSION['cart']['screenings'][0])){
