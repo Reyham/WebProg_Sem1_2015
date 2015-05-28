@@ -20,6 +20,14 @@
 		$_SESSION['cart']['screenings'] = array_values($_SESSION['cart']['screenings']);
 		};
 		if(isset($_SESSION['cart']['screenings'][0])){
+		echo '<div class="UserDetails">
+				<div>Name:</div>
+				<input type="text" name="name" required><br><br>
+				<div>Phone:</div>
+				<input type="text" name="phone" pattern="^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$" required><br><br>
+				<div>Email:</div>
+				<input type="email" name="email" required><br><br>
+				</div>';
 		echo '<div id="ticketsPanel">';
 		foreach($_SESSION['cart']['screenings'] as $id => $ticket){
 			$rows = count($ticket['seats']);
@@ -123,6 +131,8 @@
 			echo '<input class="submitCart" type="submit" name="sendReservation" value="Book"/></div>';
 	
 			if(isset($_POST['sendReservation'])){
+			$_SESSION['cart']['grand-total'] = $gtotal;
+			$_SESSION['cart']['total'] = $total;
 			$_POST=$_SESSION;
 			}
 		}
