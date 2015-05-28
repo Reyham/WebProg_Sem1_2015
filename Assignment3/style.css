@@ -44,7 +44,7 @@ main{
 .BookingPanel{
 	background-color: white;
 	border: 2px solid black;
-	width: 60%;
+	width: 40%;
 	height: auto;
 	display: inline-block;
 	background-image: url(oldpaper.png);
@@ -57,8 +57,8 @@ main{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	overflow: hidden;
-	margin-left:20%;
-	margin-right:20%;
+	margin-left:30%;
+	margin-right:30%;
 }
 
 
@@ -402,7 +402,13 @@ margin-right:30%;
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
 }
-
+#barcode{
+width:75px;
+height:auto;
+display:inline-block;
+right:0;
+padding-bottom:50px;
+}
 .close {
 	background: #606061;
 	color: #FFFFFF;
