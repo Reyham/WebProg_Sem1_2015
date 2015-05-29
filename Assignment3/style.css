@@ -406,8 +406,8 @@ margin-right:30%;
 width:75px;
 height:auto;
 display:inline-block;
-right:0;
-padding-bottom:50px;
+float:right;
+
 }
 .close {
 	background: #606061;
@@ -627,6 +627,16 @@ h4{
 		width: initial;
 		float: initial;
 	}
+		.BookingPanel{
+	width:500px;
+	height:auto;
+}
+.ticketInfo{
+width:500px;
+height:auto;
+margin-left:30%;
+
+}
 }
 
 @media screen and (max-width: 588px) {
@@ -665,4 +675,4 @@ h4{
 	#Synopsis{
 		width: 205px;
 	}
-}
+
